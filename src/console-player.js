@@ -1,10 +1,9 @@
-function createConsolePlayer() {
+function createPlayer() {
   let board = null;
   let resolve = null;
   const vm = {};
   function makeTurn(brd) {
     board = brd;
-    currentPlayer = vm;
     return new Promise(res => {
       resolve = res;
     })
@@ -20,4 +19,4 @@ function createConsolePlayer() {
   return vm;
 }
 
-export default { createConsolePlayer };
+export default { createPlayer };
