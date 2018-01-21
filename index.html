@@ -10,13 +10,37 @@
 </head>
 
 <body>
+    <div class="menu-overlay menu-overlay--hidden">
+        <div class="menu">
+            <div class="menu-item">
+                <label for="firstPlayer">First player</label>
+                <select name="firstPlayer" id="firstPlayer">
+                    <option value="human" selected>Human</option>
+                    <option value="computer1">Computer, easy</option>
+                    <option value="computer2">Computer</option>
+                </select>
+            </div>
+            <div class="menu-item">
+                <label for="secondPlayer">Second player</label>
+                <select name="secondPlayer" id="secondPlayer">
+                    <option value="human">Human</option>
+                    <option value="computer1">Computer, easy</option>
+                    <option value="computer2" selected>Computer</option>
+                </select>
+            </div>
+            <button id="menu-ok">ok</button>
+        </div>
+    </div>
     <div class="controls">
         <button id="start">New</button>
         <button id="undo">Undo</button>
+        <button id="menu">|||</button>
     </div>
     <div id="board">
         Starting...
     </div>
+    <div id="history"></div>
+    <div class="copyright">Copyright (c) Oleg Oshkodorov</div>
     <script src="index.js"></script>
 </body>
 
